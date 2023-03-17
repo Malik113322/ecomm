@@ -1,0 +1,53 @@
+@import 'colors';
+
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2874f0;
+    padding: 0 2rem;
+    border-radius: 5px;
+    
+
+    > h2{
+        font: 600 1.3rem 'Roboto';
+        text-align: center;
+        width: 250px;
+        border: 3px solid oldlace;
+        border-radius: 20px;
+        padding: 0.7rem;
+
+        a{
+            color: $tertiary;
+        }
+    }
+    >div{
+       display: flex;
+       align-items: center;
+       >a{
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: $tertiary;
+        margin: 0 1rem;
+        transition: all 0.5s;
+        padding: 0.1rem;
+        &:hover{
+            opacity: 0.5;
+        }
+        >p{ 
+            color: #2874f0;
+            position: absolute;
+            font: 900 0.7rem 'Roboto';
+            background-color: $tertiary;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            transform: translate(80%, -80%);
+        }
+       }
+    }
+    
+}
